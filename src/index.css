@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@layer components {
+  @font-face {
+    font-family: 'Agustina Regular';
+    src: local('Agustina Regular'), url('assets/Agustina.woff') format('woff');
+    }
+    .font-scriptt{
+      font-family: 'Agustina Regular';
+      padding: 0px 10px ;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+    .nM {
+      text-shadow: 1px 1px 3px gray;
+    }
+    
+    
+  }
