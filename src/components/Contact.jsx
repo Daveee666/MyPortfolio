@@ -55,7 +55,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-row">
                     <a
-                      href="mailto:sevilladavebryan@gmail.com"
+                      href="https://github.com/Daviesss666"
                       className="pr-4 inline-block text-accent hover:text-white py-2"
                     >
                       {" "}

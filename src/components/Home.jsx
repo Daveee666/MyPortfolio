@@ -63,7 +63,7 @@ const Home = () => {
               <AiOutlineFacebook size={40} className="fill-blue-500"/>{" "}
             </a>
             <a
-              href="https://www.github.com/"
+              href="https://github.com/Daviesss666"
               className="pr-4 inline-block text-accent hover:text-white"
             >
               {" "}
