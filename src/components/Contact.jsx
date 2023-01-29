@@ -61,7 +61,7 @@ const Contact = () => {
                       {" "}
                       <AiOutlineGithub size={40} className="fill-black" />{" "}
                     </a>
-                    <p className="py-3 text-xl"> @dave464</p>
+                    <p className="py-3 text-xl"> @Daviesss666</p>
                 </div>
           </div>
             </div>
