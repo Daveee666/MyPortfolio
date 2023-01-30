@@ -42,7 +42,7 @@ const Project = () => {
 
                       <div className="mx-auto">
                         <a
-                          href="https://davebryansevilla-porfolio.netlify.app/"
+                          href="https://davebryansevilla-portfolio.netlify.app/"
                           className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
                         >
                           Live
