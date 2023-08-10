@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState,useEffect } from 'react';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Header() {
 
@@ -12,14 +13,16 @@ function Header() {
 
   let [open,setOpen]=useState(false);
   
+  useEffect(() =>{
+    AOS.init();
+    AOS.refresh();
+  },[]);
 
   return (
     <>
-        <header className='w-full fixed top 0 left-0 '>
-          <motion.div 
-              initial={{y:-60, opacity:0}}
-              animate={{y:0, opacity:1}}
-              transition={{ delay: 0.2, duration: 0.8, type: "spring" }}
+        <header className='w-full fixed top 0 left-0 z-10'>
+          <div
+              data-aos="fade-down" 
               className='md:flex items-center justify-between bg-white py-4 md:px10 px-7'> 
               <div className='flex items-center '> 
                 
@@ -40,7 +43,7 @@ function Header() {
                     ))
                   }
               </ul>   
-              </motion.div>
+              </div>
         </header> 
     </>
     

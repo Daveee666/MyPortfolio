@@ -1,6 +1,8 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Profile from "../assets/developer.svg";
 import Typewriter from "typewriter-effect";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { motion } from 'framer-motion';
 import{ FaTelegramPlane} from "react-icons/fa"
 import {
@@ -11,6 +13,12 @@ import {
 
 
 const Home = () => {
+
+  useEffect(()=>{
+    AOS.init();
+    AOS.refresh();
+  },[]);
+
   return (
     <section className="px-5 py-32 text-chead " id="Home" >
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between " >
@@ -18,7 +26,7 @@ const Home = () => {
             initial={{x:-400 }}
             animate={{ x:0}}
             transition={{ delay: 1, duration: 1, type: "tween" }}
-           className="hero-info pb-5 md:pb-0 ">
+           className="hero-info pb-5 md:pb-0 " >
           <h1 className="text-5xl lg:text-6xl ">
             Hi, I am              
                   <br/>
@@ -72,24 +80,21 @@ const Home = () => {
           </div>
 
           <br/><a
-            href="https://drive.google.com/file/d/1gLYmNaxyL_DueAKj5fpLc0uDU99F9rxV/view?usp=share_link"
+            href="https://drive.google.com/file/d/1VozN7h5feDy2fPlfrAMe7w3_33Vxjy2q/view?usp=drive_link"
             className=" btn bg-sky-500/100 rounded-full text-gray-100 font-medium border-2 border-sky-300 px-6 py-3 hover:bg-transparent hover:text-stone-900 duration-500"
           >
             <span>See My Resume</span>
           </a>
         </motion.div>
                     
-        <motion.div
-           initial={{x:700  }}
-           animate={{ x:0}}
-           transition={{ delay: 2, duration: 1, type: "spring", stiffness: 100  }}
+        <div data-aos="fade-left"  data-aos-duration="3000" data-aos-easing="ease-in-sine"
           className="hero-img  ">
             <img
                 src={Profile}
                 alt="coding illustration"
-                className="lgw-[10%] 2xl:hidden "
+                className="lgw-[80%] 2xl:hidden "
             />
-        </motion.div>
+        </div>
       </div>
     </section>
   );
