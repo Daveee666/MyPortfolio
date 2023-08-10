@@ -20,8 +20,8 @@ const Home = () => {
   },[]);
 
   return (
-    <section className="px-5 py-32 text-chead " id="Home" >
-      <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between " >
+    <section className="px-5 py-32 text-chead  " id="Home"  >
+      <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between" >
         <motion.div 
             initial={{x:-400 }}
             animate={{ x:0}}
@@ -92,7 +92,7 @@ const Home = () => {
             <img
                 src={Profile}
                 alt="coding illustration"
-                className="lgw-[80%] 2xl:hidden "
+                className="lgw-[10%]  "
             />
         </div>
       </div>

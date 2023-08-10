@@ -32,7 +32,9 @@ const About = () => {
          
         </div>
 
-        <div data-aos="fade-left"
+        <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
           className="about-img">
           <img
             src={AboutImg}
