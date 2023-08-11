@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useEffect}from "react";
 import proj1 from "../assets/h2.png"
 import proj2 from "../assets/D.png"
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Project = () => {
+
+  useEffect(()=>{
+    AOS.init()
+    AOS.refresh()
+  },[]);
+
   return (
     <section className=" text-black px-5 py-32" id="Project">
       <div className="container mx-auto items-center justify-center md:justify-between">
@@ -10,7 +19,7 @@ const Project = () => {
               Project
           </h2>
             <div className="container mt-12 mx-auto grid md:grid-cols-3 gap-4">
-              <div className="relative">
+              <div className="relative" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                   <img src={proj1} alt="coding illustration" className=""/>
                   <div className="flex absolute left-5 right-12 top-[13px] bottom-0 mx-auto w-[80%] h-[80%]  bg-[#0F172A]  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
                     <p className="py-5 text-center font-bold px-2 text-white">
@@ -33,7 +42,7 @@ const Project = () => {
                       </div>
                   </div>
                  </div>
-              <div className="relative">
+              <div className="relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000" data-aos-easing="ease-in-sine" >
                   <img src={proj2} alt="coding illustration" className=""/>
                   <div className="flex absolute left-5 right-12 top-[13px] bottom-0 mx-auto w-[80%] h-[80%]  bg-[#0F172A]  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
                     <p className="py-5 text-center font-bold px-2 text-white">
@@ -56,7 +65,7 @@ const Project = () => {
                       </div>
                   </div>
               </div>
-              <div className="relative">
+              <div className="relative" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000" data-aos-easing="ease-in-sine">
                   <img src={proj2} alt="coding illustration" className=""/>
                   <div className="flex absolute left-5 right-12 top-[13px] bottom-0 mx-auto w-[80%] h-[80%]  bg-[#0F172A]  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
                     <p className="py-5 text-center font-bold px-2 text-white">

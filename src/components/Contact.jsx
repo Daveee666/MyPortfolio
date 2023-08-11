@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import AboutImg from "../assets/profile-pic.png";
 import{  FaTelegramPlane} from "react-icons/fa"
 import {
@@ -6,12 +6,18 @@ import {
   AiOutlineFacebook,
   AiOutlineGithub,
 } from "react-icons/ai";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Contact = () => {
+  useEffect(()=>{
+    AOS.init();
+    AOS.refresh();
+  },[])
+
   return (
-    <section className=" text-gray-800 px-5 py-32" id="Contact">
+    <section data-aos="fade-up" data-aos-duration="3000"data-aos-easing="ease-in-sine" className=" text-gray-800 px-5 py-32" id="Contact">
       <div className="container mx-auto items-center justify-center md:justify-between">
          <h2 className="text-5xl font-bold mb-5 text-blu pb-2 nM">
               Contact
