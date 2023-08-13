@@ -17,7 +17,7 @@ const Contact = () => {
   },[])
 
   return (
-    <section data-aos="fade-up" data-aos-duration="3000"data-aos-easing="ease-in-sine" className=" text-gray-800 px-5 py-32" id="Contact">
+    <section data-aos="fade-up" data-aos-duration="1000"data-aos-easing="ease-in-sine" className=" text-gray-800 px-5 py-32" id="Contact">
       <div className="container mx-auto items-center justify-center md:justify-between">
          <h2 className="text-5xl font-bold mb-5 text-blu pb-2 nM">
               Contact
