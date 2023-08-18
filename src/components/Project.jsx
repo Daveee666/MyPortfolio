@@ -1,6 +1,7 @@
 import React, {useEffect}from "react";
 import proj1 from "../assets/h2.png"
 import proj2 from "../assets/D.png"
+import proj3 from "../assets/proj3.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -66,21 +67,21 @@ const Project = () => {
                   </div>
               </div>
               <div className="relative" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000" data-aos-easing="ease-in-sine">
-                  <img src={proj2} alt="coding illustration" className=""/>
+                  <img src={proj3} alt="coding illustration" className=""/>
                   <div className="flex absolute left-5 right-12 top-[13px] bottom-0 mx-auto w-[80%] h-[80%]  bg-[#0F172A]  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
                     <p className="py-5 text-center font-bold px-2 text-white">
-                        A simple Portfolio. Built with React and Tailwind CSS
+                        The Movie Database App
                     </p>
 
                       <div className="mx-auto">
                         <a
-                          href="https://davebryansevilla-porfolio.netlify.app/"
+                          href="https://dbpsmovies.netlify.app/"
                           className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
                         >
                           Live
                         </a>
                         <a
-                          href="https://github.com/Daviesss666/MyPortfolio"
+                          href="https://github.com/Daviesss666/DBSmovies"
                           className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
                         >
                           Code
