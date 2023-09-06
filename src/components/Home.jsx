@@ -80,7 +80,7 @@ const Home = () => {
           </div>
 
           <br/><a
-            href="https://drive.google.com/file/d/1VozN7h5feDy2fPlfrAMe7w3_33Vxjy2q/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1dCkJstJ8haP5Iqouzow2WfArwZ7vfW7h/view?usp=drive_link"
             className=" btn bg-sky-500/100 rounded-full text-gray-100 font-medium border-2 border-sky-300 px-6 py-3 hover:bg-transparent hover:text-stone-900 duration-500"
           >
             <span>See My Resume</span>
